@@ -1,0 +1,18 @@
+{
+    "target_overrides": {
+        "*": {
+            "target.c_lib": "small",
+            "target.printf_lib": "minimal-printf",
+            "platform.minimal-printf-enable-floating-point": true,
+            "platform.minimal-printf-set-floating-point-max-decimals": 2,
+            "platform.stdio-minimal-console-only": true,
+            "nsapi.default-wifi-security": "WPA_WPA2",
+            "nsapi.default-wifi-ssid": "\"Redmi\"",
+            "nsapi.default-wifi-password": "\"ikt104testing\""
+        },
+        "DISCO_L475VG_IOT01A": {
+            "target.network-default-interface-type": "WIFI",
+            "rtos.main-thread-stack-size": 16384
+        }
+    }
+}
